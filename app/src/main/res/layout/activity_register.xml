@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary_dark"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="131dp"
+            android:layout_height="127dp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="TODO" />
+
+        <EditText
+            android:id="@+id/edittext_username"
+            android:layout_width="247dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableStart="@mipmap/username"
+            android:inputType="text"
+            android:hint="@string/username"
+
+            android:paddingStart="2dp"
+            android:autofillHints="" />
+
+
+        <EditText
+            android:id="@+id/edittext_email"
+            android:layout_width="247dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableStart="@mipmap/email"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="2dp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="243dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:drawableStart="@mipmap/password"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#04ea00"
+        android:onClick="Homepage"
+        android:text="@string/register"
+        android:textColor="#ffffff"
+        tools:ignore="OnClick" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/registered"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textview_login"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:onClick="login"
+            android:paddingStart="10dp"
+            android:text="@string/login"
+            android:textColor="#04ea00"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

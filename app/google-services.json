@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "608787202742",
+    "firebase_url": "https://stocks-ledger.firebaseio.com",
+    "project_id": "stocks-ledger",
+    "storage_bucket": "stocks-ledger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608787202742:android:55517c383f0e275b86dc17",
+        "android_client_info": {
+          "package_name": "io.google.stocksledger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608787202742-mip6mfeb0n90308k5f91uoeaua5vt316.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.google.stocksledger",
+            "certificate_hash": "092d3a7144d8e552881a355f002585da9910b859"
+          }
+        },
+        {
+          "client_id": "608787202742-e1mitmgu361akaeteh31otrk57ld53ab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmPFmvBLzgtcXwET9fQzdxlICRoWUe70k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608787202742-e1mitmgu361akaeteh31otrk57ld53ab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

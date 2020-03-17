@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddStockActivity"
+    android:background="@color/design_default_color_primary_dark"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/enter_stocks_details"
+        android:textColor="#ffffff"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit-text_company"
+            android:layout_width="355dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:inputType="text"
+            android:hint="@string/company_name"
+            android:paddingStart="2dp"
+            android:autofillHints="@string/company_name" />
+
+        <EditText
+            android:id="@+id/edittext_cost"
+            android:layout_width="355dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:inputType="numberDecimal"
+            android:hint="@string/stock_price"
+            android:paddingStart="2dp"
+            android:autofillHints="@string/stock_price" />
+
+        <EditText
+            android:id="@+id/edittext_stocks"
+            android:layout_width="355dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+
+            android:hint="@string/amount_of_stocks"
+            android:autofillHints="@string/amount_of_stocks"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/edittext_purchasedate"
+            android:layout_width="355dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:inputType="date"
+            android:hint="@string/date_of_purchase"
+            android:autofillHints="@string/date_of_purchase" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#04ea00"
+            android:onClick="addstock"
+            android:text="@string/add_new_stock"
+            android:textColor="#ffffff"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#04ea00"
+            android:onClick="cancel"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            tools:ignore="OnClick" />
+
+
+    </LinearLayout>
+</LinearLayout>
